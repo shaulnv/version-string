@@ -1,0 +1,63 @@
+# Ignore Autotools-generated files
+/aclocal.m4
+/autom4te.cache
+/autoscan.log
+/configure
+/config.log
+/config.status
+/depcomp
+/install-sh
+/Makefile.in
+/missing
+/stamp-h1
+/compile
+
+# Ignore Automake-generated files
+Makefile
+Makefile.in
+
+# Ignore Libtool-generated files
+/ltmain.sh
+*.o
+*.lo
+*.la
+.deps
+.libs
+*.a
+
+# Ignore output directories and files
+/build
+/build-aux
+/config
+/Makefile
+
+# Ignore editor and IDE files
+*~
+*.swp
+.DS_Store
+.idea
+*.sublime-project
+*.sublime-workspace
+.vscode/
+
+# Ignore other temporary files
+*.bak
+*.tmp
+*.log
+
+# Ignore other common intermediate and backup files
+*.rej
+*.orig
+*.patch
+*.class
+*.pyc
+*.pyo
+*.so
+*.d
+
+# Ignore tags and cscope files
+tags
+TAGS
+cscope.out
+cscope.in.out
+cscope.po.out
