@@ -1,0 +1,28 @@
+# Custom Makefile to automate the build process
+
+# Define variables
+AUTORECONF = autoreconf -i
+CONFIGURE = ./configure
+MAKE = make
+
+# Default target
+all: configure
+	$(MAKE)
+
+# Run autoreconf and configure if needed
+configure: configure.ac Makefile.am
+	$(AUTORECONF)
+	$(CONFIGURE)
+	touch configure
+
+# Clean target
+clean:
+	$(MAKE) clean
+	git clean -dffx
+
+# Distclean target
+distclean:
+	$(MAKE) distclean
+	rm -f configure
+
+.PHONY: all configure clean distclean
