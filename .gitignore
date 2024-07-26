@@ -38,7 +38,8 @@ Makefile.in
 .idea
 *.sublime-project
 *.sublime-workspace
-.vscode/
+.vscode/*
+!.vscode/settings.json
 
 # Ignore other temporary files
 *.bak
